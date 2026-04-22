@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap');
+
+:root {
+    --ivory: #F5F1EA;
+    --black: #121212;
+    --burgundy: #5A1F2B;
+    --gold: #C8A44B;
+    --grey: #D6D2CC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--black);
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    background: var(--black);
+    color: var(--ivory);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.hero-text {
+    margin: auto;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.4rem;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 110px 70px;
+}
+
+.light {
+    background: var(--ivory);
+}
+
+.dark {
+    background: var(--burgundy);
+    color: var(--ivory);
+}
+
+.center {
+    text-align: center;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 30px auto 0;
+    line-height: 1.8;
+}
+
+/* GALLERY */
+
+.gallery-item {
+    max-width: 1200px;
+    margin: 0 auto 120px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.gallery-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.gallery-item img {
+    width: 55%;
+    border-radius: 6px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.caption {
+    width: 45%;
+}
+
+.caption h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.caption p {
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--black);
+    color: var(--ivory);
+    padding: 80px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--grey);
+}
+
+.copy {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
